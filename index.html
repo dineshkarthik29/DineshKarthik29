@@ -1,0 +1,259 @@
+<html>
+	<head>
+		<title>Dinesh Karthik K</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+		<linl rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+ 
+	</head>
+	<body>
+		<!-----NavigationBar---->
+		<section id="nav-bar">
+			<nav class="navbar navbar-expand-lg navbar-light">
+      <div class="navbar-brand">
+      <a class="navbar-brand" href="#"><img src="Images/images.png"></a>
+    </div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#top"><i class="fa fa-home"></i>HOME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#about"><i class="fa fa-search"></i>ABOUT</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Projects"><i class="fa fa-life-ring"></i>PROJECTS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#achievements"><i class="fa fa-trophy"></i>ACHIEVEMENTS</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#Resume"><i class="fa fa-cog"></i>RESUME</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#contact"><i class="fa fa-phone-square"></i>CONTACT</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+		</section>
+    <!-------Slider------->
+    <div id="Slider">
+      <div id="headerSlider" class="carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#headerSlider" data-slide-to="0" class="active"></li>
+    <li data-target="#headerSlider" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100 img-fluid" src="Images/wallpaper.png">
+      <div class="carousel-caption">
+        <h5>Hello!! I am <b>Dinesh Karthik</b></h5>
+        <h5>Mechanical Engineer</h5>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 img-fluid" src="Images/wallpaper1.png">
+      <div class="carousel-caption">
+        <div class="carousel-caption1">
+        <h5>I am a Mechanical Engineer who is willing to obtain a<br>challenging position in a high quality engineering environment where<br>my innovative ideas and technical skills will add value<br>to organizational operations.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#headerSlider" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#headerSlider" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+    </div>
+    <!-------About------->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>About Me</h2>
+            <div class="about-content">
+              I am B.E Mechanical Engineering graduate studied at University College of Engineering Villupuram(An Affiliated Constituent College of Anna University Chennai) and my native is Madurai. I am looking forward to an entry-level position to kick start my career where I can Implement my creative and innovative ideas for the growth of the organisation.
+            </div>
+            <a href="about.html"><button type="button" class="btn btn-primary">Read more <i class="fa fa-forward"></i>
+            </button></a>
+          </div>
+          <div class="col-md-6 skills-bar">
+            <h3>Skills</h3>
+            <p>Auto CAD</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 80%">80%</div>
+            </div>
+            <p>Autodesk FUSION360</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 60%">60%</div>
+            </div>
+            <p>PTC Creo</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 55%">55%</div>
+            </div>
+            <p>Industrial Automation</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 85%">85%</div>
+            </div><span id="dots"></span><span id="more">
+            <p>Web Development</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 60%">60%</div>
+            </div>
+            <p>Ansys</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 40%">40%</div>
+            </div>
+            <p>Photoshop</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 50%">50%</div>
+            </div>
+            <p>Active in Sports</p>
+            <div class="progress">
+              <div class="progress-bar" style="width: 90%">90%</div>
+            </div></span>
+            <button onclick="myFunction()" id="myBtn" class="btn btn-primary">Show more</button>
+            <script type="text/javascript">
+            function myFunction() {
+              var dots = document.getElementById("dots");
+              var moreText = document.getElementById("more");
+              var btnText = document.getElementById("myBtn");
+
+              if (dots.style.display === "none") {
+              dots.style.display = "inline";
+              btnText.innerHTML = "Show more";
+              moreText.style.display = "none";
+              } else {
+              dots.style.display = "none";
+              btnText.innerHTML = "Show less";
+              moreText.style.display = "inline";
+              }
+            }
+            </script>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-------Projects------->
+    <section id="Projects">
+      <div class="container">
+        <h1>My Projects</h1>
+        <div class="row Projects">
+          <div class="col-md-4 text-center">
+             <div class="icon">
+               <i class="fa fa-sun-o"></i>
+             </div>
+             <h3>Fabrication of Solar Air Conditioning</h3>
+             <p>Descripion: Designing a air cooler that works on the solar power. Thereby converting the solar energy into a electrical energy and stored in a battery for operating the solar air cooler.</p>
+             <a href="projects/third.pdf" target="_blank"><button type="button" class="btn btn-primary">Preview <i class="fa fa-arrow-circle-up"></i>
+            </button></a>
+          </div>
+          <div class="col-md-4 text-center">
+             <div class="icon">
+               <i class="fa fa-ravelry"></i>
+             </div>
+             <h3>Mechanical Operated Multipurpose Agriculture Cutter</h3>
+             <p>Descripion: Development of multicrop agriculture cutter to harvest  various crops to reduce the time and as well as the cost.</p>
+             <a href="projects/fourth.ppt" target="_blank"><button type="button" class="btn btn-primary">Preview <i class="fa fa-arrow-circle-up"></i>
+            </button></a>
+          </div>
+          <div class="col-md-4 text-center">
+             <div class="icon">
+               <i class="fa fa-desktop"></i>
+             </div>
+             <h3>Web Development   </h3>
+             <p>Descripion: Designed a webpages of my own for my personnal as well as freelance to others.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--------Achievements-------->
+    <section id="achievements">
+      <div class="container">
+        <h1>My Achievements</h1>
+        <div class="row">
+          <div class="col-md-4 profile-pic text-center">
+            <div class="img-box">
+              <img src="Images/hockey.jpg" class="img-responsive">
+            </div>
+            <p>Captioned University College of Engineering HOCKEY Mens Team and Secured RUNNERS-UP position in the Anna University Zonal level tournament in the year 2019-2020.</p>
+          </div>
+           <div class="col-md-4 profile-pic text-center">
+            <div class="img-box">
+              <img src="Images/bsnl.jpg" class="img-responsive">
+            </div>
+            <p>Honoured as a LISENING OFFICER to the batch of Broadband Technician Course by the Head Mr.Raagavan of Regional Telecom Training Center of Bharat Sanchar Ningam Limited .</p>
+          </div>
+           <div class="col-md-4 profile-pic text-center">
+            <div class="img-box">
+              <img src="Images/titan.jpg" class="img-responsive">
+            </div>
+            <p>Selected as one of the Five best Candidates from my depatment bt the TITAN Leap placement training Programmers.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-----------Resume-------->
+    <section>
+      <div id="Resume">
+        <div class="container">
+          <p>Download my Resume to know more about me</p>
+           <a href="DK29 Resume.pdf" class="btn btn-primary"><i class="fa fa-download"></i> Download Now</a>
+        </div>
+      </div>
+    </section>
+    <!-------------Get in Touch-------->
+    <section id="contact">
+      <div class="container">
+        <h1>Get In Touch</h1>
+        <div class="row">
+          <div class="col-md-6 profile-pic">
+            <div class="img-photo">
+              <img src="Images/profile.jpg" class="img-responsive">
+            </div>
+            <h2>DINESH KARTHIK K</h2>
+            <h3>Mechaniacl Engineer</h3>
+             <a href="gallary.html" class="btn btn-primary"><i class="fa fa-picture-o"></i> Gallery</a>
+          </div>              
+          <div class="col-md-6 contact-info">     
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <div class="follow"><b>Address:</b> <i class="fa fa-map-marker"></i>  5/212,Vivekanandhar Street, Thasildhar Nagar, Madurai-625020.</div>
+            <div class="follow"><b>Phone:</b> <i class="fa fa-phone"></i>  9600702037, 7092346805</div>
+            <div class="follow"><b>E-mail:</b><i class="fa fa-envelope-o"></i>  dineshkarthik291998@gmail.com</div>
+            <div class="follow"><label><b>Get Social:</b></label>
+              <a href="https://www.facebook.com/dineshkarthik291998/"><i class="fa fa-facebook"></i></a>
+              <a href="https://twitter.com/D_karthik1998"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.instagram.com/freak_soul._29/"><i class="fa fa-instagram"></i></a>
+              <a href="https://www.linkedin.com/in/dinesh-karthik-kanagarajah-6054a1189/"><i class="fa fa-linkedin"></i></a>
+              <a href="https://github.com/dineshkarthik29"><i class="fa fa-github"></i></a>
+              <a href="https://myaccount.google.com/u/1/"><i class="fa fa-google-plus"></i></a><br>
+             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------------Footer--------->
+    <section id="footer">
+      <div class="container text-center">
+        <a href="#"><p>Made with <i class="fa fa-heart"></i> by Dinesh Karthik</p></a>
+      </div>
+    </section>
+    <!-----------Footer End--------->
+    <script src="js/smooth-scroll.js"></script>
+    <script>
+      var scroll = new SmoothScroll('a[href*="#"]');
+    </script> 
+	</body>
+</html>
