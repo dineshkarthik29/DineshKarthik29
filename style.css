@@ -70,7 +70,7 @@
 {
 	color: #FFFFFF;
 	font-size: 30px;
-}
+} 
 /*------------About-------*/
 #about
 {
@@ -191,12 +191,15 @@ h1::after
 }
 .profile-pic .img-box img
 {
+	max-width: 100%;
 	filter: grayscale(1);
 }
 .profile-pic .img-box img:hover
 {
 	filter: grayscale(0);
 	cursor: pointer;
+	transition: all 1 s;
+	transform: scale(1.2);
 }
 .profile-pic p
 {
@@ -263,6 +266,8 @@ h1::after
 }
 .img-photo img
 {
+	max-width: 100%;
+	height: auto;
 	padding: 10px;
 	border-radius: 50%;
 	box-shadow: 0 0 10px;
@@ -308,7 +313,7 @@ h1::after
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) 
 {
-  .column 
+  .follow 
   {
     width: 50%;
   }
@@ -317,8 +322,8 @@ h1::after
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) 
 {
-  .column 
+  .follow
   {
-    width: 100%;
+    width: 90%;
   }
 }

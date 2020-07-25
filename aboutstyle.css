@@ -3,7 +3,7 @@ body
 	background-image: url(Images/about.jpg);
   	background-size: cover;
   	background-attachment: fixed;
-	height: 100vh;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -11,9 +11,9 @@ body
 }
 #aboutmyself h2
 {
-	margin-bottom: 50px;
-	padding-top: 50px;
-	font-size: 50px;
+	margin-bottom: 5px;
+	padding-top: 100px;
+	padding-bottom: -50px; 
 	color: #000080;
 }
 #aboutmyself p
@@ -25,11 +25,11 @@ body
 .img-wrap
 {
 	width: 100%;
-	padding-top: 80px;
+	padding-top: 100px;
 }
 .img-wrap img
 {
-	width: 100%;
+	max-width: 100%;
 	padding: 10px;
 	border-radius: 60%;
 	box-shadow: 0 0 10px;
@@ -38,17 +38,17 @@ body
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 900px) 
 {
-  .column 
+  .aboutmyself h2
   {
-    width: 50%;
+    max-width: 50%;
   }
 }
 
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 600px) 
 {
-  .column 
+  .aboutmyself h2
   {
-    width: 100%;
+    max-width: 100%;
   }
 }
